@@ -1,0 +1,7 @@
+<div class="container">
+      <ol>
+        <button class="btn btn-primary" (click)="createLog()">Display Details</button>
+        <p *ngIf="buttonClicked">Secret Password = tuna</p>
+        <p *ngFor = "let s of buttonClicks;let i = index" [ngStyle] = "{backgroundColor: getColor(i)}" [ngClass] = "{fifth  : i>=5}" > {{buttonClicks[i]}} </p>
+      </ol>
+</div>
